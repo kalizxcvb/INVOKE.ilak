@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gian's Invoker Minigame</title>
+    <link rel="icon" type="imazges" href="invoker/invoke.png">
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h2>Gian's Invoker Minigame</h2>
+<p>Press Q, W, E to build a skill (max 3), then press R to invoke!</p>
+
+<div class="target">Target Spell: <span id="targetSpell"></span></div>
+<div class="ability-image">
+    <img id="abilityImg" src="" alt="Ability Image" />
+</div>
+<div class="combo">Your Combo: <span id="combo"></span></div>
+<div class="score">Score: <span id="score">0</span></div>
+<div class="score">High Score: <span id="highscore">0</span></div>
+<div class="timer">Time Left: <span id="timer">60</span>s</div>
+<div class="rank-display" id="rankDisplay"></div>
+<button onclick="startGame(0)">Play</button>
+
+<footer>
+  <div id="betlog_ni_invoker">
+
+    <div class="orb">
+      <img src="invoker/quas.png" alt="quas" data-key="Q">
+      <span>Q</span>
+    </div>
+    <div class="orb">
+      <img src="invoker/wex.png" alt="wex" data-key="W">
+      <span>W</span>
+    </div>
+    <div class="orb">
+      <img src="invoker/exort.png" alt="exort" data-key="E">
+      <span>E</span>
+    </div>
+    <div class="orb">
+      <img src="invoker/invoke.png" alt="invoke" data-key="R">
+      <span>R</span>
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="game.js"></script>
+
+</body>
+
+<br/>
+<img src="spells/skills.png" alt="Description" class="center-img" style="width: 250px; height: 150; border: 2px solid teal;">
+
+<h5 style="font-family: Times New Roman;text-align: left;">&copy;G. Kali`</h5> 
+
+</html>
